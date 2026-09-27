@@ -1,0 +1,90 @@
+Round trip on Rs 1,00,000 at exit = entry: Rs 237.82
+
+First possible signal date per stock (SMA and SMA 5 sessions ago both exist):
+  late entrants: INDIGO 2016-01-20, SBILIFE 2017-12-11, HDFCLIFE 2018-01-25, MAXHEALTH 2020-10-29, ETERNAL 2021-10-01, JIOFIN 2023-10-31
+
+trade_log_1to2.csv sha256 4012416e4b1a299d402661039f9d9ef4836dcc6ed88f88d7f0fb6bdd8f5133eb
+=== 1:2 - all 50 ===
+Funnel
+  signal candles: 1659  (ignored, trade open: 182)
+  orders placed:  1477
+  fills:          773
+  no_fills:       704  gap=311, cancelled=358, expired=30, replaced=4, end_of_test=1
+Per trade
+  before costs: win%=38.16  avgR=0.1337  avg%=0.5143
+  after costs:  win%=38.16  avgR=0.0263  avg%=0.2759
+  SE of net avgR (sample sd / sqrt n): 0.0536
+Total net result: Rs 213,281.25  (over 773 trades at Rs 1,00,000 each)
+Holding period (sessions): median=4.0  longest=209
+Worst losing streak (after costs): 15
+Exit types: stop=444, target=272, gap_stop=34, gap_target=21, end_of_test=2
+End-of-test trades: 2
+  with:    n=773  win%=38.16  avgR=0.0263  (gross win%=38.16  gross avgR=0.1337)
+  without: n=771  win%=38.00  avgR=0.0242  (gross win%=38.00  gross avgR=0.1317)
+Demerger-affected filled trades: 0  [TMPV: 0 (open across 0, signalled in sessions 1-44 0); ADANIENT: 0 (open across 0, signalled in sessions 1-44 0); GRASIM: 0 (open across 0, signalled in sessions 1-44 0); RELIANCE: 0 (open across 0, signalled in sessions 1-44 0)]
+Per stock (trades, net win%):
+  JSWSTEEL 23 (30%); BAJAJ-AUTO 22 (36%); NESTLEIND 21 (38%); TATASTEEL 21 (29%); EICHERMOT 20 (60%); TECHM 20 (60%); INDIGO 20 (30%); CIPLA 20 (35%); M&M 20 (45%); BHARTIARTL 20 (30%); ONGC 19 (42%); POWERGRID 19 (11%); HDFCBANK 19 (47%); TRENT 19 (37%); AXISBANK 18 (50%); GRASIM 18 (33%); HINDALCO 18 (39%); ADANIPORTS 18 (28%); TATACONSUM 18 (22%); BEL 17 (35%); NTPC 17 (29%); SHRIRAMFIN 17 (29%); KOTAKBANK 17 (41%); RELIANCE 16 (38%); SUNPHARMA 16 (12%); MARUTI 16 (38%); HCLTECH 15 (33%); SBIN 15 (53%); TITAN 15 (53%); TCS 15 (33%); ICICIBANK 15 (40%); LT 15 (40%); APOLLOHOSP 15 (53%); ASIANPAINT 15 (47%); SBILIFE 14 (50%); COALINDIA 14 (29%); ULTRACEMCO 14 (43%); WIPRO 13 (15%); ADANIENT 13 (38%); HINDUNILVR 12 (42%); MAXHEALTH 12 (58%); TMPV 11 (36%); BAJAJFINSV 10 (60%); HDFCLIFE 9 (44%); BAJFINANCE 9 (44%); INFY 9 (33%); DRREDDY 8 (38%); ETERNAL 7 (43%); ITC 7 (43%); JIOFIN 2 (50%)
+
+=== 1:2 - top 10 ===
+Funnel
+  signal candles: 358  (ignored, trade open: 40)
+  orders placed:  318
+  fills:          164
+  no_fills:       154  gap=74, cancelled=76, expired=3, replaced=1, end_of_test=0
+Per trade
+  before costs: win%=42.07  avgR=0.2477  avg%=0.7486
+  after costs:  win%=42.07  avgR=0.1269  avg%=0.5100
+  SE of net avgR (sample sd / sqrt n): 0.1220
+Total net result: Rs 83,636.17  (over 164 trades at Rs 1,00,000 each)
+Holding period (sessions): median=4.0  longest=209
+Worst losing streak (after costs): 7
+Exit types: stop=81, target=62, gap_stop=14, gap_target=7, end_of_test=0
+End-of-test trades: 0
+  with:    n=164  win%=42.07  avgR=0.1269  (gross win%=42.07  gross avgR=0.2477)
+  without: n=164  win%=42.07  avgR=0.1269  (gross win%=42.07  gross avgR=0.2477)
+Demerger-affected filled trades: 0  [TMPV: 0; ADANIENT: 0; GRASIM: 0; RELIANCE: 0 (open across 0, signalled in sessions 1-44 0)]
+Per stock (trades, net win%):
+  BHARTIARTL 20 (30%); M&M 20 (45%); HDFCBANK 19 (47%); AXISBANK 18 (50%); KOTAKBANK 17 (41%); RELIANCE 16 (38%); LT 15 (40%); ICICIBANK 15 (40%); SBIN 15 (53%); INFY 9 (33%)
+
+trade_log_1to3.csv sha256 7b4f9d847524edb0902fa3c0e1cd8a02e6a27310f40207466c8e8823fe61edf5
+=== 1:3 - all 50 ===
+Funnel
+  signal candles: 1659  (ignored, trade open: 249)
+  orders placed:  1410
+  fills:          737
+  no_fills:       673  gap=295, cancelled=345, expired=28, replaced=4, end_of_test=1
+Per trade
+  before costs: win%=30.66  avgR=0.2142  avg%=0.8713
+  after costs:  win%=30.66  avgR=0.1068  avg%=0.6326
+  SE of net avgR (sample sd / sqrt n): 0.0694
+Total net result: Rs 466,241.73  (over 737 trades at Rs 1,00,000 each)
+Holding period (sessions): median=5.0  longest=295
+Worst losing streak (after costs): 19
+Exit types: stop=475, target=204, gap_stop=36, gap_target=20, end_of_test=2
+End-of-test trades: 2
+  with:    n=737  win%=30.66  avgR=0.1068  (gross win%=30.66  gross avgR=0.2142)
+  without: n=735  win%=30.48  avgR=0.1049  (gross win%=30.48  gross avgR=0.2123)
+Demerger-affected filled trades: 0  [TMPV: 0 (open across 0, signalled in sessions 1-44 0); ADANIENT: 0 (open across 0, signalled in sessions 1-44 0); GRASIM: 0 (open across 0, signalled in sessions 1-44 0); RELIANCE: 0 (open across 0, signalled in sessions 1-44 0)]
+Per stock (trades, net win%):
+  BAJAJ-AUTO 22 (32%); JSWSTEEL 22 (27%); NESTLEIND 21 (14%); BHARTIARTL 20 (25%); CIPLA 20 (25%); POWERGRID 19 (11%); ONGC 19 (26%); INDIGO 19 (26%); TRENT 19 (37%); TATASTEEL 19 (26%); M&M 18 (39%); AXISBANK 18 (39%); GRASIM 18 (28%); ADANIPORTS 17 (24%); EICHERMOT 17 (47%); HDFCBANK 17 (35%); BEL 17 (35%); KOTAKBANK 17 (24%); TATACONSUM 17 (18%); HINDALCO 17 (29%); NTPC 16 (25%); TECHM 16 (56%); SUNPHARMA 16 (12%); TITAN 15 (53%); SHRIRAMFIN 15 (20%); LT 15 (33%); ASIANPAINT 15 (47%); SBIN 14 (50%); RELIANCE 14 (29%); SBILIFE 14 (43%); TCS 14 (21%); ICICIBANK 14 (21%); HCLTECH 14 (29%); APOLLOHOSP 14 (43%); WIPRO 13 (8%); ADANIENT 13 (31%); MARUTI 13 (31%); ULTRACEMCO 13 (38%); COALINDIA 13 (0%); HINDUNILVR 12 (33%); MAXHEALTH 12 (58%); TMPV 10 (20%); HDFCLIFE 9 (44%); INFY 9 (22%); BAJFINANCE 9 (44%); BAJAJFINSV 9 (56%); DRREDDY 8 (25%); ITC 7 (29%); ETERNAL 6 (50%); JIOFIN 2 (50%)
+
+=== 1:3 - top 10 ===
+Funnel
+  signal candles: 358  (ignored, trade open: 58)
+  orders placed:  300
+  fills:          156
+  no_fills:       144  gap=68, cancelled=72, expired=3, replaced=1, end_of_test=0
+Per trade
+  before costs: win%=32.05  avgR=0.2526  avg%=0.9079
+  after costs:  win%=32.05  avgR=0.1319  avg%=0.6691
+  SE of net avgR (sample sd / sqrt n): 0.1542
+Total net result: Rs 104,385.74  (over 156 trades at Rs 1,00,000 each)
+Holding period (sessions): median=5.0  longest=295
+Worst losing streak (after costs): 9
+Exit types: stop=92, target=44, gap_stop=14, gap_target=6, end_of_test=0
+End-of-test trades: 0
+  with:    n=156  win%=32.05  avgR=0.1319  (gross win%=32.05  gross avgR=0.2526)
+  without: n=156  win%=32.05  avgR=0.1319  (gross win%=32.05  gross avgR=0.2526)
+Demerger-affected filled trades: 0  [TMPV: 0; ADANIENT: 0; GRASIM: 0; RELIANCE: 0 (open across 0, signalled in sessions 1-44 0)]
+Per stock (trades, net win%):
+  BHARTIARTL 20 (25%); AXISBANK 18 (39%); M&M 18 (39%); HDFCBANK 17 (35%); KOTAKBANK 17 (24%); LT 15 (33%); RELIANCE 14 (29%); ICICIBANK 14 (21%); SBIN 14 (50%); INFY 9 (22%)
