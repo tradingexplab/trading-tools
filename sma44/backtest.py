@@ -5,7 +5,7 @@ Usage:
 
 Writes, per target test (1:2 and 1:3):
     trade_log_1to2.csv / trade_log_1to3.csv   one row per order
-    signals_1to2.csv   / signals_1to3.csv     one row per candle passing tests 1-3
+    signals_1to2.csv   / signals_1to3.csv     one row per candle passing the rising, touch and green-candle checks
     summary.txt                               every reported metric
 The SHA-256 of each trade log is printed so two data copies can be compared.
 """
@@ -92,7 +92,7 @@ def load(data_dir, sym):
 def run_stock(sym, df, mult):
     orders, signals = [], []
     visit_active = False      # inside a visit (an away day has occurred)
-    visit_used = False        # a candle in this visit already passed tests 1-3
+    visit_used = False        # a candle in this visit already passed the entry checks
     order = None              # waiting order
     trade = None              # open trade
     last = len(df) - 1
@@ -165,7 +165,7 @@ def run_stock(sym, df, mult):
         if not (rising and touch and bullish):
             continue
         if visit_used:
-            continue                            # test 4 fails
+            continue                            # not the first signal in this visit
         visit_used = True
         d = df.Date[i]
         rec = dict(symbol=sym, signal_date=d.date(), open=o_, high=h, low=l, close=c,
@@ -305,7 +305,7 @@ def main():
     os.makedirs(a.out, exist_ok=True)
 
     rt = charges(POSITION, POSITION)["total_charges"]
-    out = [f"Round trip on Rs 1,00,000 at exit = entry: Rs {rt:.2f} (spec: Rs 237.82)", ""]
+    out = [f"Round trip on Rs 1,00,000 at exit = entry: Rs {rt:.2f}", ""]
 
     data = {s: load(a.data, s) for s in UNIVERSE}
     trading_days = {s: pd.DatetimeIndex(d.Date) for s, d in data.items()}
