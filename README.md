@@ -11,6 +11,7 @@ Each script answers one question with arithmetic, not opinion. Every number show
 | [ETF Swing Trading Charges in Zerodha (What the Calculator hides)](https://www.youtube.com/watch?v=ygbnnFp2-bE&t=4s) | What do broker charges actually cost a small account, and what win rate does that force? | `costs.py` |
 | [Can you actually trade with Rs. 10,000?](https://www.youtube.com/watch?v=NCi6GO_K8u0) | Can a position that still makes sense after costs exist on a ₹10,000 account at all? | `sizing.py` |
 | [44 Moving Average Backtest: Does It Work After Costs?](https://youtu.be/u5874OUKqpM) | Does the 44 moving average strategy make money after charges? | `sma44/` |
+| [ETF ki Dukan Backtest: 291 Trades, Zero Losses, Same Return as Holding NIFTYBEES](https://youtu.be/ucAkvlpwNLE) | Does the ETF ki Dukan method beat simply holding NIFTYBEES after charges? | `etf_dukan/` |
 
 ## `costs.py` and `sizing.py`
 
@@ -126,6 +127,35 @@ The script prints a SHA-256 hash for each trade log. With the same data and pand
 - `trade_log_1to2.csv`: `4012416e4b1a299d402661039f9d9ef4836dcc6ed88f88d7f0fb6bdd8f5133eb`
 - `trade_log_1to3.csv`: `7b4f9d847524edb0902fa3c0e1cd8a02e6a27310f40207466c8e8823fe61edf5`
 
+## `etf_dukan/` — ETF ki Dukan backtest
+
+Tests version 1 of the ETF ki Dukan method on its original list of 83 ETFs, dated 2 April 2023. Test period: 3 April 2023 to 25 September 2026. Zerodha delivery charges included.
+
+The rules come from the strategy's own videos. Where they are silent, the test uses the plain reading. Both are listed in `etf_dukan/README.md`.
+
+### Results
+
+| | ₹2 lakh | ₹10,000 |
+|---|---|---|
+| Strategy, per year | 9.9% | −0.8% |
+| Holding NIFTYBEES, per year | 9.8% | 9.7% |
+| Sales / losing after charges | 291 / 0 | 269 / 168 |
+| Still held at the end / below cost | 29 / 27 | 26 / 26 |
+
+No sale lost money at ₹2 lakh. The losses sit in the ETFs never sold. **With ₹2 lakh it matched holding NIFTYBEES. With ₹10,000 the flat DP charge turned it into a loss.** This is one 3.5-year stretch of market, so it cannot show how the method behaves in a long crash.
+
+### Run it
+
+```powershell
+git clone https://github.com/tradingexplab/trading-tools.git
+cd trading-tools\etf_dukan
+pip install pandas numpy
+python fetch_data.py
+python etf_dukan_v1.py
+```
+
+`fetch_data.py` downloads prices from a pinned EOD2 commit, so every run sees the same data.
+
 ## Run the other scripts
 
 `costs.py` and `sizing.py` need only Python 3. No external packages.
@@ -152,7 +182,7 @@ I am not a SEBI-registered investment adviser. Nothing here is investment advice
 
 `costs.py` and `sizing.py` show whether a trade **can exist** on a small account. They say nothing about whether it **wins**.
 
-The backtest describes the past. It is not a forecast.
+The backtests describes the past. It is not a forecast.
 
 ## License
 
