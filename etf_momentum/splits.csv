@@ -1,0 +1,11 @@
+symbol,ex_date,ratio,action
+goldbees,2019-12-19,100,unit split (face value 100 to 1)
+niftybees,2019-12-19,10,unit split (face value 10 to 1)
+bankbees,2019-12-19,10,unit split (face value 10 to 1)
+psubnkbees,2019-12-19,10,unit split (face value 10 to 1)
+juniorbees,2004-02-11,10,unit split (before test window)
+pvtbanietf,2024-03-01,10,unit split (face value 10 to 1)
+lowvolietf,2024-03-01,10,unit split (face value 10 to 1)
+fmcgietf,2024-05-10,10,unit split (face value 10 to 1)
+alpl30ietf,2024-05-10,10,unit split (face value 10 to 1)
+mom30ietf,2022-08-12,10,9:1 bonus units (history starts on this date)
