@@ -12,6 +12,7 @@ Each script answers one question with arithmetic, not opinion. Every number show
 | [Can you actually trade with Rs. 10,000?](https://www.youtube.com/watch?v=NCi6GO_K8u0) | Can a position that still makes sense after costs exist on a ₹10,000 account at all? | `sizing.py` |
 | [44 Moving Average Backtest: Does It Work After Costs?](https://youtu.be/u5874OUKqpM) | Does the 44 moving average strategy make money after charges? | `sma44/` |
 | [ETF ki Dukan Backtest: 291 Trades, Zero Losses, Same Return as Holding NIFTYBEES](https://youtu.be/ucAkvlpwNLE) | Does the ETF ki Dukan method beat simply holding NIFTYBEES after charges? | `etf_dukan/` |
+| [5 Popular Strategies vs Doing Nothing](https://youtu.be/MUjYNVuJHSw) | Do five popular Indian strategies beat buying NIFTYBEES once and holding for 10 years? | `five_vs_hold/` |
 
 ## `costs.py` and `sizing.py`
 
@@ -155,6 +156,18 @@ python etf_dukan_v1.py
 ```
 
 `fetch_data.py` downloads prices from a pinned EOD2 commit, so every run sees the same data.
+
+## `five_vs_hold/` — 5 popular strategies vs doing nothing
+
+Supertrend, golden cross, the 44 moving average, ETF ki Dukan and momentum rotation, each against holding NIFTYBEES, on one shared 10-year setup (Oct 2016 – Sep 2026) with Zerodha charges.
+
+Four of the five made less than holding NIFTYBEES (11.5% a year). Momentum rotation beat it at 15.9% a year, with a deeper worst fall (−37.7% against −36.3%) and an ETF list chosen with hindsight. Full results, rules and limits are in [`five_vs_hold/README.md`](five_vs_hold/README.md).
+
+```powershell
+cd trading-tools\five_vs_hold
+python fetch_data.py
+python backtest.py
+```
 
 ## Run the other scripts
 
