@@ -3,7 +3,7 @@ backtest.py - four popular strategies against simply holding NIFTYBEES,
 all on one shared setup. (Momentum rotation, the fifth strategy, is in ../etf_momentum/.)
 
 Shared setup
-  * Test window: first trading day on or after 1 Oct 2016, to 25 Sep 2026 (last day in the data).
+  * Test window: first trading day on or after 1 Oct 2016, to 23 Oct 2026 (last day in the data).
   * Signals come from the Nifty 50 index divided by 100. The index has no pre-open auction
     prints, which distort NIFTYBEES' own opens, highs and lows. Data from Oct 2015 warms up
     the indicators.
@@ -32,7 +32,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "etf_dukan"))
 from etf_dukan_v1 import buy_cost, sell_cost, load, scores, run as dukan_run
 import etf_dukan_v1
 
-T0, T1 = "2016-10-01", "2026-09-25"
+T0, T1 = "2016-10-01", "2026-10-23"
 DATA = os.path.join(HERE, "data")
 n = pd.read_csv(os.path.join(DATA, "NIFTY50.csv"), parse_dates=["Date"]).drop_duplicates("Date").set_index("Date").sort_index()
 n = n.loc["2015-10-01":]
