@@ -13,6 +13,7 @@ Each script answers one question with arithmetic, not opinion. Every number show
 | [44 Moving Average Backtest: Does It Work After Costs?](https://youtu.be/u5874OUKqpM) | Does the 44 moving average strategy make money after charges? | `sma44/` |
 | [ETF ki Dukan Backtest: 291 Trades, Zero Losses, Same Return as Holding NIFTYBEES](https://youtu.be/ucAkvlpwNLE) | Does the ETF ki Dukan method beat simply holding NIFTYBEES after charges? | `etf_dukan/` |
 | [5 Popular Strategies vs Doing Nothing](https://youtu.be/MUjYNVuJHSw) | Do five popular Indian strategies beat buying NIFTYBEES once and holding for 10 years? | `five_vs_hold/` |
+| [2004 Se 12 Baar Nifty 13% Gira: Wapas Aane Mein Kitne Din Lage? (Hindi)](https://youtu.be/sE9GRMXjkgQ) | How long did each Nifty 13% fall since 2004 take to get back to its old high? | `crash_recovery_2004/` |
 
 ## `costs.py` and `sizing.py`
 
