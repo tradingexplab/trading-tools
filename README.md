@@ -14,6 +14,18 @@ Each script answers one question with arithmetic, not opinion. Every number show
 | [ETF ki Dukan Backtest: 291 Trades, Zero Losses, Same Return as Holding NIFTYBEES](https://youtu.be/ucAkvlpwNLE) | Does the ETF ki Dukan method beat simply holding NIFTYBEES after charges? | `etf_dukan/` |
 | [5 Popular Strategies vs Doing Nothing](https://youtu.be/MUjYNVuJHSw) | Do five popular Indian strategies beat buying NIFTYBEES once and holding for 10 years? | `five_vs_hold/` |
 | [2004 Se 12 Baar Nifty 13% Gira: Wapas Aane Mein Kitne Din Lage? (Hindi)](https://youtu.be/sE9GRMXjkgQ) | How long did each Nifty 13% fall since 2004 take to get back to its old high? | `crash_recovery_2004/` |
+| [ETF Momentum vs Nifty + Gold: Who Won? There’s a Twist (10 Years)](https://youtu.be/7bU0KcMSJQc) | Does a classic ETF momentum rotation beat a simple 50/50 Nifty BeES + Gold BeES split? | `etf_momentum/` |
+| [Jio IPO: I Backtested India's 20 Biggest IPOs (The Allotment Catch)](https://youtu.be/aQVly7hun78) | Did India's 20 biggest IPOs make money on listing day? | `ipo_listing/` |
+| [Nifty Down 13%: I Tested 3 Ways to Invest ₹1,00,000](https://youtu.be/_59aFx5w9tE) | During a 10%+ Nifty fall, is it better to buy now, wait, or spread the money out? | `dip_paths/` |
+| [10 Years of Nifty: Should You Keep 20% Cash (₹2 Lakh) for the Crash?](https://youtu.be/ikbQF5kG-D4) | Does keeping 20% or 50% in cash for crashes beat staying fully in NIFTYBEES? | `cash_reserve/` |
+| [Nifty Crash Recovery: How Long Did Every Crash Since 2016 Take?](https://youtu.be/Utl-pmyaJqU) | How long did each Nifty fall since 2016 take to recover? | `crash_recovery/` |
+| [Nifty ETF vs 5 Strategies: ₹10,00,000 Pe 10 Saal Ka Test (Hindi)](https://youtu.be/9mqaTAHvaZE) | The Hindi remake, re-run to Oct 2026: do five popular strategies beat holding NIFTYBEES? | `five_vs_hold/` |
+| [Papa Bole Diwali Muhurat Pe Kharido: 22 Saal Ka Data Check Kiya (Hindi)](https://youtu.be/cNEYoq--4XI) | Is buying Nifty on Diwali Muhurat day luckier than buying on an ordinary day? | `muhurat_test/` |
+| [₹1,00,000 in FD vs Nifty: 17 Saal Ka Data (Tax Aur Mehngai Ke Baad)](https://youtu.be/3mp1yb3oWWg) | After tax and inflation, did an FD or Nifty grow ₹1,00,000 more? | `fd_vs_nifty/` |
+| [Heikin Ashi vs Nifty Hold: ₹10,00,000 Pe 22 Saal Ka Test (Hindi)](https://youtu.be/Lwtf659aqYM) | Does a Heikin Ashi strategy beat just holding Nifty over 22 years? | `japan_strategies/` |
+| [Nifty 50 vs Market Astrology: 22 Saal Ka Data Test (2004–2026)](https://youtu.be/cvfREpmKnHk) | Do Amavasya, Mercury retrograde and Jupiter in Ketu's nakshatra really move Nifty? | `astrology_test/` |
+| [ChatGPT, Gemini, Claude Ki 'Best' Strategy: ₹1,00,000 Ka Kya Hua?](https://youtu.be/McscMVsRz5k) | Do three AI chatbots' swing strategies beat holding Nifty after costs? | `three_ai_vs_nifty/` |
+| [Claude AI Trading Skill: ₹2,295 Ka Profit, Kharche Ke Baad Kitna Bacha?](https://youtu.be/1y6RuCFFWWc) | What does a delivery trade really cost after STT, stamp duty, exchange charges, GST and the DP charge? | `india-trade-cost-skill/` |
 
 ## `costs.py` and `sizing.py`
 
